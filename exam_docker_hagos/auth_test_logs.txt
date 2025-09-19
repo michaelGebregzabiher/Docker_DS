@@ -1,0 +1,36 @@
+auth_test-1  | 
+auth_test-1  | Test 1
+auth_test-1  | ============================
+auth_test-1  | Authentication test
+auth_test-1  | ============================
+auth_test-1  | request done at "/permissions"
+auth_test-1  | | username="alice"
+auth_test-1  | | password="wonderland"
+auth_test-1  | expected result = 200
+auth_test-1  | actual result = 200
+auth_test-1  | ==>  SUCCESS
+auth_test-1  | 
+auth_test-1  | 
+auth_test-1  | Test 2
+auth_test-1  | ============================
+auth_test-1  | Authentication test
+auth_test-1  | ============================
+auth_test-1  | request done at "/permissions"
+auth_test-1  | | username="bob"
+auth_test-1  | | password="builder"
+auth_test-1  | expected result = 200
+auth_test-1  | actual result = 200
+auth_test-1  | ==>  SUCCESS
+auth_test-1  | 
+auth_test-1  | 
+auth_test-1  | Test 3
+auth_test-1  | ============================
+auth_test-1  | Authentication test
+auth_test-1  | ============================
+auth_test-1  | request done at "/permissions"
+auth_test-1  | | username="clementine"
+auth_test-1  | | password="mandarine"
+auth_test-1  | expected result = 403
+auth_test-1  | actual result = 403
+auth_test-1  | ==>  SUCCESS
+auth_test-1  | 

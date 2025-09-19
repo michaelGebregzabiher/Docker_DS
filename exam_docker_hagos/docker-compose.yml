@@ -1,0 +1,53 @@
+#version: '3'
+services:
+  api:
+    image: datascientest/fastapi:1.0.0
+    ports:
+      - "8000:8000"
+    networks:
+      - testing-network
+
+  auth_test:
+    build: ./auth
+    environment:
+      - API_ADDRESS=api
+      - API_PORT=8000
+      - LOG=1
+    depends_on:
+      - api
+    networks:
+      - testing-network
+    volumes:
+      - log-volume:/log #Ensure logs are saved(ensures consistent volume mounting)
+
+  authorization_test:
+    build: ./authorization
+    environment:
+      - API_ADDRESS=api
+      - API_PORT=8000
+      - LOG=1
+    depends_on:
+      - api
+    networks:
+      - testing-network
+    volumes:
+      - log-volume:/log
+
+  content_test:
+    build: ./content
+    environment:
+      - API_ADDRESS=api
+      - API_PORT=8000
+      - LOG=1
+    depends_on:
+      - api
+    networks:
+      - testing-network
+    volumes:
+      - log-volume:/log
+
+volumes:
+  log-volume:
+
+networks:
+  testing-network:

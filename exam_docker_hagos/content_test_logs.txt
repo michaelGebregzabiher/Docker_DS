@@ -1,0 +1,44 @@
+content_test-1  | 
+content_test-1  | Test 1 - /v1/sentiment
+content_test-1  | ============================
+content_test-1  | Content test
+content_test-1  | ============================
+content_test-1  | request done at "/v1/sentiment"
+content_test-1  | | sentence="life is beautiful"
+content_test-1  | expected score sign = 1
+content_test-1  | actual score = 0.5994
+content_test-1  | ==>  SUCCESS
+content_test-1  | 
+content_test-1  | 
+content_test-1  | Test 2 - /v1/sentiment
+content_test-1  | ============================
+content_test-1  | Content test
+content_test-1  | ============================
+content_test-1  | request done at "/v1/sentiment"
+content_test-1  | | sentence="that sucks"
+content_test-1  | expected score sign = -1
+content_test-1  | actual score = -0.3612
+content_test-1  | ==>  SUCCESS
+content_test-1  | 
+content_test-1  | 
+content_test-1  | Test 1 - /v2/sentiment
+content_test-1  | ============================
+content_test-1  | Content test
+content_test-1  | ============================
+content_test-1  | request done at "/v2/sentiment"
+content_test-1  | | sentence="life is beautiful"
+content_test-1  | expected score sign = 1
+content_test-1  | actual score = 0.5994
+content_test-1  | ==>  SUCCESS
+content_test-1  | 
+content_test-1  | 
+content_test-1  | Test 2 - /v2/sentiment
+content_test-1  | ============================
+content_test-1  | Content test
+content_test-1  | ============================
+content_test-1  | request done at "/v2/sentiment"
+content_test-1  | | sentence="that sucks"
+content_test-1  | expected score sign = -1
+content_test-1  | actual score = -0.3612
+content_test-1  | ==>  SUCCESS
+content_test-1  | 

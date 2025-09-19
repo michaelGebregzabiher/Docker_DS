@@ -1,0 +1,44 @@
+authorization_test-1  | 
+authorization_test-1  | Test 1
+authorization_test-1  | ============================
+authorization_test-1  | Authorization test
+authorization_test-1  | ============================
+authorization_test-1  | request done at "/v1/sentiment"
+authorization_test-1  | | username="bob"
+authorization_test-1  | expected result = 200
+authorization_test-1  | actual result = 200
+authorization_test-1  | ==>  SUCCESS
+authorization_test-1  | 
+authorization_test-1  | 
+authorization_test-1  | Test 2
+authorization_test-1  | ============================
+authorization_test-1  | Authorization test
+authorization_test-1  | ============================
+authorization_test-1  | request done at "/v2/sentiment"
+authorization_test-1  | | username="bob"
+authorization_test-1  | expected result = 403
+authorization_test-1  | actual result = 403
+authorization_test-1  | ==>  SUCCESS
+authorization_test-1  | 
+authorization_test-1  | 
+authorization_test-1  | Test 3
+authorization_test-1  | ============================
+authorization_test-1  | Authorization test
+authorization_test-1  | ============================
+authorization_test-1  | request done at "/v1/sentiment"
+authorization_test-1  | | username="alice"
+authorization_test-1  | expected result = 200
+authorization_test-1  | actual result = 200
+authorization_test-1  | ==>  SUCCESS
+authorization_test-1  | 
+authorization_test-1  | 
+authorization_test-1  | Test 4
+authorization_test-1  | ============================
+authorization_test-1  | Authorization test
+authorization_test-1  | ============================
+authorization_test-1  | request done at "/v2/sentiment"
+authorization_test-1  | | username="alice"
+authorization_test-1  | expected result = 200
+authorization_test-1  | actual result = 200
+authorization_test-1  | ==>  SUCCESS
+authorization_test-1  | 
